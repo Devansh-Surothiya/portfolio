@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devansh - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Devansh Portfolio </div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <h1 class="naam">Devansh Portfolio</h1> -->
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Devansh </span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="about">
+            <span class="text-gray">What I have done so far</span>
+            <h1>About Me</h1>
+            <div class="para-cont">
+            <div class="para">
+                <p>
+                    Hello I am Devansh Surothiya I started coding since I
+                was a 9 year old kid in 2019 I started with Java and XML,
+                thus working with android development but in 2021 I
+                gained interest in web development and now I am
+                proficient web developer, I make websites for clients
+                for myself and perform freelancing. Today I am
+                a passionate web deve
+                </p>
+            </div>
+        </div>
+            <div class="about1">
+            <div class="about-image">
+                <img src="about.png" alt="">
+            </div>
+        </div>
+        </section>
+        <!-- <section id="services">
+            <div class="container">
+                <h1 id="sub-title">My Services</h1>
+                <div class="services-list">
+
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web </i> Designer.', 'Web Developer.'],
+            typeSpeed: 82,
+        });
+
+        var secondSection = document.getElementsByClassName(secondSection)
+    </script>
+   <script src="https://kit.fontawesome.com/5349bff045.js" crossorigin="anonymous"></script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-800px"
+    }
+</script>
+
+<footer>
+    <div class="footer-logo"><img src="logo.png" alt=""></div>
+    <div class="footer-copyright">&copy; 2024 Devansh Surothiya. All rights reserved.</div>
+  </footer>
+
+</body>
+
+</html>
